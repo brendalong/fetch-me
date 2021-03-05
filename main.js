@@ -1,11 +1,15 @@
 console.log("hello beautiful");
 
+let startTime = new Date(Date.now());
+console.log("startTime", startTime);
 //our machines are fast - check it out
 for (var i = 0; i < 2000000; i++){
 	//running a loop for fun
 	var x = i + 1/1 * 6 - 4;
 }
+console.log('doneTime milliseconds', Date.now() - startTime );
 console.log("I just looped ", i, " times.");
+console.log('date stuff', startTime.getFullYear(), "or", startTime.toDateString() );
 
 
 const getBigData = () => {
